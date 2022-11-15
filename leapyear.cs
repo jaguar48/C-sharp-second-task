@@ -1,4 +1,5 @@
-
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
 
 using System;
 namespace leapyear{
@@ -14,7 +15,7 @@ namespace leapyear{
         while (count<20){
             year ++;
             if ((year %4 ==0 )|| (year % 400 ==0)){
-                Console.WriteLine("year" + year + "is a leap year");
+                Console.WriteLine("year " + year + " is a leap year");
                 count ++;
             }
             
