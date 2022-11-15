@@ -1,10 +1,14 @@
 
 using System;
 using System.Collections.Generic;
-public class HelloWorld
+
+namespace piglatin{
+    public class HelloWorld
 { 
-        public static void pig_latin(string words) 
-        {
+        public static void pig_latin() 
+        {  
+            Console.WriteLine("Enter words");
+            string words = Console.ReadLine();
             string[] word = words.Split(" ");
             foreach(var st in word){
                 var rt = st[1..];
@@ -12,9 +16,10 @@ public class HelloWorld
                 Console.WriteLine($"{rt}{et}ay");
             }
         }
-         public static void latin_pig(string words) 
+         public static void latin_pig() 
         {
-            
+            Console.WriteLine("Enter words");
+            string words = Console.ReadLine();
             string[] word = words.Split(" ");
             foreach(string st in word){
                 string remove_ay = st.Remove(st.Length -2 );
@@ -27,11 +32,13 @@ public class HelloWorld
 
     public static void Main(string[] args)
     {   
-        pig_latin("The quick brown fox");
+        pig_latin();
         Console.WriteLine("\n");
-        latin_pig("heTay uickqay rownbay oxfay");
+        latin_pig();
         
 
      
     }
+}
+
 }
