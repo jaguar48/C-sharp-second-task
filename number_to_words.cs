@@ -8,8 +8,8 @@ using System.Text.RegularExpressions;
 using System.Linq;
 
 
-
-public class HelloWorld
+namespace numbertowords{
+    public class HelloWorld
 {
     public static string NumberToWords(int number)
 {
@@ -110,4 +110,5 @@ Console.WriteLine(words);
             
           
     }
+}
 }
